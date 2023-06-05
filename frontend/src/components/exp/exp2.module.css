@@ -1,0 +1,12 @@
+.wrapper{
+    width: 100%;
+    padding: 2rem 1rem;
+    background-color:var(--bg-dark-1);
+    color: var(--bg-1);
+    margin-top: 5rem;
+    font-size: 4rem;
+    text-align: center;
+    /* position: fixed;
+    top:6rem;
+    left: 0; */
+}

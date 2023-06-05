@@ -1,0 +1,127 @@
+.wrapper{
+    min-height: 100vh;
+    background-color: var(--bg-1);
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+.heading__block{
+    width: 4rem;
+    font-size: 5rem;
+    text-align: center;
+    width: 100%;
+    font-family: var(--font-1);
+    margin-bottom: 3rem;
+    color: var(--bg-dark-1);
+
+    
+}
+.heading__block>h2{
+    box-shadow: inset 4px 7px 22px -1px rgba(0,0,0,0.75);
+    width: fit-content;
+    margin: auto;
+    padding: 0 2rem;
+    border-radius: 5rem;
+}
+
+
+.service__block{
+    width: 100%;
+    height: 15rem;
+    /* background-color: red; */
+    display: flex;
+    
+}
+
+.service__name{
+   width: 60%;
+   height: 100%;
+   /* background-color: green; */
+   font-size: 5rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+  
+}
+.service__image{
+   width: 40%;
+   height: 100%;
+   
+   /* display: flex;
+   align-items: center;
+   justify-content: center; */
+   /* background-color: red;    */
+   
+}
+.service__image{
+    box-shadow: 4px 7px 22px -1px rgba(0,0,0,0.75);
+}
+.service__image>img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover ;
+   
+  
+   
+}
+.mask__img{
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center center;
+    margin: auto;
+}
+
+
+.test{
+    width: 10rem;
+    height: 10rem;
+    border: 1px solid red;
+}
+
+.test>img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover;
+    background-size: contain; */
+    mask-size: contain;
+     mask-repeat: no-repeat;
+     mask-mode: luminance;
+}
+
+
+@media only screen and (min-width: 46em){
+    .service__block{
+        height: 25rem;
+    }
+    .heading__block{
+        font-size: 6rem;
+    }
+    .service__name{
+        font-size: 6rem;
+    }
+}
+
+@media only screen and (min-width: 56.25em){
+    .service__block{
+        height: 30rem;
+    }
+    .heading__block{
+        font-size: 7rem;
+    }
+    .service__name{
+        font-size: 7rem;
+    }
+}
+
+@media only screen and (min-width: 75em){
+    .service__block{
+        height: 35rem;
+    }
+    .heading__block{
+        font-size: 8rem;
+    }
+    .service__name{
+        font-size: 9rem;
+    }
+}

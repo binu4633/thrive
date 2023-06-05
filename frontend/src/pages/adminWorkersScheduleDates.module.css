@@ -1,0 +1,25 @@
+.wrapper{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--bg-1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+}
+.btn{
+    width: 25rem;
+    min-height: 4rem;
+    font-size: 2rem;
+    border: none;
+    background-color: var(--bg-1);
+    color: var(--bg-dark-1);
+    margin-top: 2rem;
+    border-radius: 5rem;
+    box-shadow:  4px 7px 22px -1px rgba(0,0,0,0.75);
+}
+
+.no__attendence{
+    font-size: 5rem;
+}

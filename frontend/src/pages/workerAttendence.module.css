@@ -1,0 +1,83 @@
+.wrapper{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--bg-1);
+    padding-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user{
+    width: 90%;
+    font-size: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.user__img{
+    width: 15rem;
+    height: 15rem;
+}
+.user__img>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.user>p{
+    margin-top: 2rem;
+}
+.attendence{
+    width: 60%;
+}
+.date__block{
+    font-size: 4rem;
+    margin-top: 3rem;
+}
+
+.btn{
+    font-size: 2rem;
+    margin-top: 2rem;
+    padding: 0.3rem 2rem;
+    border-radius: 5rem;
+    border: none;
+    background-color: var(--bg-dark-1);
+    color: var(--bg-1);
+}
+
+.error{
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+.result{
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+
+
+@media only screen and (min-width: 37.5em) {
+    .attendence{
+        width: 50%;
+    }
+}
+
+
+
+@media only screen and (min-width: 46em){
+    .attendence{
+        width: 55%;
+    }
+}
+
+@media only screen and (min-width: 56.25em){
+    .attendence{
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 75em){
+    .attendence{
+        width: 40%;
+    }
+}

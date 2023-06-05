@@ -1,0 +1,57 @@
+.wrapper{
+    width: 100%;
+    height: 25vh;
+    background-color: var(--bg-1);
+    position: relative;
+}
+
+.round1{
+    width: 12rem;
+    height: 12rem;
+    /* background-color: red; */
+    border-radius: 50%;
+    border-left: 1px solid white;
+    /* border-right: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    animation: anim 2s ease-in-out  infinite ;
+}
+
+.round2{
+    width: 6rem;
+    height: 6rem;
+    /* background-color: red; */
+    border-radius: 50%;
+    border-right: 1px solid white;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    animation: anim2 1.5s ease-in-out  infinite ;
+}
+
+@keyframes anim {
+   0%{
+    transform: rotate(0deg);
+   }
+   50%{
+    transform: rotate(180deg);
+   }
+   100%{
+    transform: rotate(360deg);
+   }
+}
+@keyframes anim2 {
+   0%{
+    transform: rotate(0deg);
+   }
+   50%{
+    transform: rotate(-180deg);
+   }
+   100%{
+    transform: rotate(-360deg);
+   }
+}

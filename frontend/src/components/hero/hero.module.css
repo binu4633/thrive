@@ -1,0 +1,187 @@
+.wrapper{
+    width:100%;
+    height: 100vh;
+    background-color: var(--bg-1);
+    position: relative;
+    padding-top: 7rem;
+}
+.bg__block__out{
+    position: absolute;
+    left: 5%;
+    top: 15%;
+    width: 90%;
+    height: 70%;
+    border-top-left-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+    /* box-shadow: inset 4px 7px 22px -1px rgba(0,0,0,0.75); */
+    box-shadow: inset 0px -4px 71px 36px rgba(0,0,0,0.75);
+    /* box-shadow: inset 4px 7px 22px -1px var(--bg-light); */
+    /* background-color: var(--bg-light); */
+    /* outline: 1px solid var(--bg-light); */
+    
+}
+.bg__block{
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    height: 90%;
+    /* width: 80%;
+    height: 70%; */
+  
+    border-top-left-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+    /* outline: 5px solid var(--bg-dark-1); */
+    /* outline-offset: 1rem; */
+    /* box-shadow:  4px 7px 22px -1px rgba(0,0,0,0.75); */
+    /* box-shadow:  4px 7px 22px -1px var(--bg-light) ; */
+    /* box-shadow: 0px -4px 71px 16px var(--bg-light); */
+    box-shadow: 0px -4px 66px -3px var(--bg-light);
+    /* outline: 1px solid var(--bg-light); */
+  
+}
+
+.bg__block >img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+    /* box-shadow: inset 4px 7px 22px -1px rgba(0,0,0,0.75); */
+}
+
+.content__block{
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    height: 70%;
+    /* background-color: gray; */
+}
+
+.name__block{
+    background-color: var(--bg-dark-1);
+    color: var(--bg-1);
+   
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+    /* margin-left: -1px; */
+    padding: 1rem 2rem;
+    box-shadow:  4px 7px 22px -1px rgba(0,0,0,0.75); 
+  
+}
+.name__block::after{
+    content: "";
+    /* background-color: rgba(255, 0, 0, 0.425); */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* transform: scale(1.02); */
+    top: 0;
+    left: 0;
+    box-shadow: inset 4px 7px 22px -1px rgba(0,0,0,0.75); 
+    /* z-index: 4; */
+}
+.name__wrapper{
+    width: max-content;
+    /* background-color: red; */
+    margin-left: auto;
+    margin-right: auto;
+}
+.name__block>div{
+    /* background-color: red; */
+    /* width:max-content; */
+    /* text-align: center; */
+}
+.hero1{
+    font-size: 6rem;
+    font-family: var(--font-1);
+}
+.hero2{
+    font-size: 3rem;
+    font-family: var(--font-1);
+}
+
+
+.booking__block{
+    font-size: 4rem;
+    font-family: var(--font-2);
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    background-color: var(--bg-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* margin-top: calc(100% + 5rem); */
+    /* margin-left: auto;
+    margin-right: auto; */
+    position: absolute;
+    bottom: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+    outline: 2px solid var(--bg-dark-1);
+    border: none;
+    padding: 3px;
+    
+}
+
+@media only screen and (min-width: 46em) {
+
+.wrapper{
+    display: flex;
+}
+.bg__block__out{
+    position: relative;
+    width: 40%;
+    height: 70%;
+
+    background-color: var(--bg-dark-1);
+    border-radius: 0;
+}
+.content__block{
+    position: relative;
+    width: 40%;
+    height: 70%;
+    /* background-color: red; */
+    top:15%;
+    box-shadow: none;
+    /* margin-top: 5%; */
+}
+.name__block{
+    /* margin-bottom: 2rem; */
+    /* margin-top: 5rem; */
+    position: relative;
+    padding: 3rem 2rem;
+    height: 50vh;
+    height: 100%;
+    bottom: 0;
+    /* border-bottom-left-radius: 10rem;
+    border-top-right-radius: 10rem; */
+    /* box-shadow: none; */
+    /* margin-bottom: 0; */
+
+}
+/* .name__block::after{
+    box-shadow: none;
+} */
+.booking__block{
+    font-size: 3.5rem;
+    width: 11rem;
+    height: 11rem;
+    color: white;
+    background-color: var(--bg-dark-1);
+    box-shadow: 4px 7px 22px -1px rgba(0,0,0,0.75);
+    outline: 2px solid var(--bg-2);
+    bottom: 5%;
+}
+.hero1{
+    font-size: 10rem;
+    font-family: var(--font-1);
+}
+.hero2{
+    font-size: 5rem;
+    font-family: var(--font-1);
+}
+}
