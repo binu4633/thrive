@@ -13,8 +13,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <GoogleOAuthProvider clientId="680514359613-jonuqb8ckg4gehk957fo2ampkjb6b4pn.apps.googleusercontent.com">
-         {/* <GoogleOAuthProvider clientId="680514359613-1d1aub80vee0g8q3pk1a8mo3m4t5epsa.apps.googleusercontent.com"> */}
+      {/* <GoogleOAuthProvider clientId="680514359613-jonuqb8ckg4gehk957fo2ampkjb6b4pn.apps.googleusercontent.com"> */}
+         <GoogleOAuthProvider clientId="680514359613-2can1dflcuh52qk35ibdlq1gm4n9us0u.apps.googleusercontent.com">
         <QueryClientProvider client={queryClient}>
            <App />
         </QueryClientProvider>
