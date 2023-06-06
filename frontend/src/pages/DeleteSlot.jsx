@@ -112,7 +112,7 @@ function DeleteSlot() {
         <div className={classes.data__wrapper}>
             {slotData && slotData.map(sl=>{
                 return(
-                    <div className={classes.data__block}>
+                    <div className={classes.data__block} key={uuid()}>
                        <p>{sl.dateString}</p>
                        <p>{sl.worker}</p>
                        <button onClick={toShowHandler.bind(this,sl._id)}>show</button>
@@ -135,7 +135,7 @@ function DeleteSlot() {
                {pageArray.map(p=>{
                 return(
                     // <button className={classes.btn__page} onClick={paginationSlotMutation.mutate.bind(this,p)}>{p}</button>
-                    <button className={classes.btn__page} onClick={paginationHandler.bind(this,p)}>{p}</button>
+                    <button className={classes.btn__page} onClick={paginationHandler.bind(this,p)} key={uuid()}>{p}</button>
                 )
                })}
                

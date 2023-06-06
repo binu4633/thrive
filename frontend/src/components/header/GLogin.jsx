@@ -25,7 +25,7 @@ function GLogin() {
       
       onSuccess={onSucess}
       onError={(e) => {
-        console.log("Login Failed",e);
+        // console.log("Login Failed",e);
       }}
       // redirect_uri='http://127.0.0.1:3000'
       redirect_uri={window.location.origin}

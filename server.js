@@ -8,14 +8,17 @@ import workerRoute from './backend/routes/workerRoutes.js';
 import adminRoute from './backend/routes/adminWorkersRoute.js' ;
 import userRoute from './backend/routes/userRoutes.js' ;
 
-
 dotenv.config();
+
 const app = express();
-const server = http.createServer(app)
+const server = http.createServer(app);
+const clientUrl = process.env.NODE_ENV ==='production' ? process.env.PRO_URL_CLIEN: process.env.DEV_URL_CLIENT
+
 const io = new Server(server,{
     cors: {
         // origin: "http://localhost:3000"
-        origin: "https://thrive-1bmi.onrender.com",
+        // origin: "https://thrive-1bmi.onrender.com",
+        origin: clientUrl,
         credentials: true
       }
 });

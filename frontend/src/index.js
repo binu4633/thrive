@@ -1,24 +1,31 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import {GoogleOAuthProvider} from '@moeindana/google-oauth'
-import { BrowserRouter } from 'react-router-dom';
-import {QueryClient,QueryClientProvider} from '@tanstack/react-query';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { GoogleOAuthProvider } from "@moeindana/google-oauth";
+import { BrowserRouter } from "react-router-dom";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-
-const queryClient = new QueryClient()
-const root = ReactDOM.createRoot(document.getElementById('root'));
+console.log("procdess env", process.env.NODE_ENV);
+const queryClient = new QueryClient();
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       {/* <GoogleOAuthProvider clientId="680514359613-jonuqb8ckg4gehk957fo2ampkjb6b4pn.apps.googleusercontent.com"> */}
-         <GoogleOAuthProvider clientId="680514359613-2can1dflcuh52qk35ibdlq1gm4n9us0u.apps.googleusercontent.com">
+      {/* <GoogleOAuthProvider clientId="680514359613-2can1dflcuh52qk35ibdlq1gm4n9us0u.apps.googleusercontent.com"> */}
+      <GoogleOAuthProvider
+        clientId={
+          process.env.NODE_ENV === "production"
+            ? process.env.REACT_APP_GOOGLE_CLIENT_PRODUCTION
+            : process.env.REACT_APP_GOOGLE_CLIENT_DEVELOPMENT
+        }
+      >
         <QueryClientProvider client={queryClient}>
-           <App />
+          <App />
         </QueryClientProvider>
-     </GoogleOAuthProvider>
+      </GoogleOAuthProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

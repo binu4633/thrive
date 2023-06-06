@@ -67,3 +67,23 @@
 .login__block{
     margin-top: 4rem;
 }
+
+.gl__wrapper{
+    width: 15rem;
+    /* height: 4rem; */
+    /* background-color: red; */
+}
+
+.gl__decoy{
+    width: 15rem;
+    height: 4rem;
+    background-color: var(--bg-1);
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gl__block{
+    margin-top: -4rem;
+}

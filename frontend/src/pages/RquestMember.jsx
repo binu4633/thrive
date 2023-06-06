@@ -4,6 +4,7 @@ import axios from "axios";
 import classes from './rquestMember.module.css';
 import Loader from '../components/loader/Loader';
 import ContextStore from '../store/context-store';
+import uuid from 'react-uuid';
 function RquestMember() {
   const storeCtx = useContext(ContextStore);
   const userInfo = storeCtx.userInfo ;
@@ -70,7 +71,7 @@ function RquestMember() {
         
         {data && data.activeMemberRequest && data.activeMemberRequest.map(rq=>{
             return(
-                <div className={classes.rq__box}>
+                <div className={classes.rq__box} key={uuid()}>
                 <div className={classes.image}>
                    <img src={rq.image ? rq.image :''} alt="" />
                 </div>

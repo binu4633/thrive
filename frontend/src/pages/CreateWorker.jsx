@@ -289,7 +289,7 @@ let pageBtnWidth = 4;
              <div style={{transform:`translateX(${pageBtnWidth*pageNumCount}rem)`}} className={classes.page__container}>
                {pageArray.map(p=>{
                 return(
-                    <button className={classes.btn__page} onClick={paginationSearchMutaion.mutate.bind(this,p)}>{p}</button>
+                    <button className={classes.btn__page} onClick={paginationSearchMutaion.mutate.bind(this,p)} key={uuid()}>{p}</button>
                 )
                })}
                

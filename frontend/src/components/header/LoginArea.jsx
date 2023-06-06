@@ -92,8 +92,16 @@ if(memberRequestMutation.data){
         </div>
        <div className={classes.login__block}>
        {!storeCtx.userInfo &&
+        <div className={classes.gl__wrapper}>
+          <div className={classes.gl__decoy}>
+           <p>login with google</p>  
+          </div>
+          <div className={classes.gl__block}>
+
+         <GLogin />
+          </div>
+        </div>
         
-        <GLogin />
         }
        </div>
        {/* <div  className={classes.login__block}>

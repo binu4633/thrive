@@ -4,6 +4,7 @@ import axios from 'axios';
 import classes from './manageMember.module.css';
 import Loader from '../components/loader/Loader';
 import ContextStore from '../store/context-store';
+import uuid from 'react-uuid';
 function ManageMember() {
 
     const storeCtx = useContext(ContextStore);
@@ -191,8 +192,8 @@ function ManageMember() {
             {/* {seachUserMutation.data && seachUserMutation.data.data.user && seachUserMutation.data.data.user.map(ur=>{ */}
             {userData && userData.map(ur=>{
                 return(
-                    <div className={classes.user}>
-                <div className={classes.image}>
+                    <div className={classes.user} key={uuid()}>
+                    <div className={classes.image}>
                     <img src={ur.image ?ur.image :''} alt="" />
                 </div>
                 <p>{ur.name}</p>
@@ -225,7 +226,7 @@ function ManageMember() {
              <div style={{transform:`translateX(${pageBtnWidth*pageNumCount}rem)`}} className={classes.page__container}>
                {pageArray.map(p=>{
                 return(
-                    <button className={classes.btn__page} onClick={paginationSearchMutaion.mutate.bind(this,p)}>{p}</button>
+                    <button className={classes.btn__page} onClick={paginationSearchMutaion.mutate.bind(this,p)} key={uuid()}>{p}</button>
                 )
                })}
                
