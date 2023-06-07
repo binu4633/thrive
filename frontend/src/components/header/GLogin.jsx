@@ -15,7 +15,8 @@ function GLogin() {
       
         if(serverResponse.data.userInfo){
             // localStorage.setItem('userInfo',JSON.stringify(serverResponse.data.userInfo));
-            storeCtx.login(serverResponse.data.userInfo)
+            storeCtx.login(serverResponse.data.userInfo);
+            storeCtx.showLoginArea();
         }
 
       };

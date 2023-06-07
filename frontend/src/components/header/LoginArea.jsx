@@ -71,10 +71,16 @@ const memberRequestMutation = useMutation({
        
         setIsToRequest(false);
 
-        if(data.data.userInfo){
+        console.log('data inside', data)
+
+        setTimeout(()=>{
+          storeCtx.showLoginArea();
+        },2000)
+
+        // if(data.data.userInfo){
         
-          storeCtx.login(data.data.userInfo)
-        }
+        //   storeCtx.login(data.data.userInfo)
+        // }
     }
 })
 

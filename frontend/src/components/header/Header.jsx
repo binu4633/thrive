@@ -71,7 +71,7 @@ function Header() {
           <button onClick={toContact}>
             <p>contact</p>{" "}
           </button>
-          <div className={classes.signin} onClick={loginAreaHandler}>
+          <button className={classes.signin} onClick={loginAreaHandler}>
             {
               storeCtx.userInfo ? 
 
@@ -85,7 +85,7 @@ function Header() {
             }
             
             
-          </div>
+          </button>
         </div>
       </div>
       {/* <div className={classes.signin} onClick={loginAreaHandler}>{storeCtx.userInfo ? storeCtx.userInfo.name :'siginin'}</div> */}
